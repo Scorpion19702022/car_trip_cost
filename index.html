@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator kosztów przejazdu samochodem</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="shortcut icon" href="./img/scorpion.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/2ab53ed4ce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Kalkulator kosztów przejazdu samochodem</h1>
+        <p>Nie wesz ile kosztuje cię przejazd z punktu A do punktu B? Możesz to sprawdzić. Musisz znać:</p>
+        <ul>
+            <li>jaki dystans przemierzasz</li>
+            <li>ile spala twój samochód</li>
+            <li>ile kosztuje paliwo</li>
+        </ul>
+        <p class="error">Wypełnij wszystkie pola!!!</p>
+        <div class="box">
+            <h2 class="box__heading">Wypełnij pola!</h2>
+            <label for="distance" class="box__label">Podaj dystans:</label>
+            <input type="number" id="distance" class="box__input" placeholder="dystans w km">
+
+            <label for="fuelusage" class="box__label">Podaj spalanie samochodu:</label>
+            <input type="number" id="fuelusage" class="box__input" placeholder="spalanie w litrach">
+
+            <label for="fuelcost" class="box__label">Podaj cenę paliwa za litr:</label>
+            <input type="number" id="fuelcost" class="box__input" placeholder="cena 1 litra paliwa">
+
+            <label for="result" class="box__label">Koszt przejazdu:</label>
+            <input type="number" id="result" class="box__input-results" placeholder="zł" disabled>
+            <div class="box__btn">
+                <button class="box__btn-result">Sprawdź</button>
+                <button class="box__btn-clean">Wyczyśc</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
